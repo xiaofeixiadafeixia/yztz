@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<title>找回密码</title>
+		<script type="text/javascript" src="dist/js/jquery-3.3.1.js" ></script>
+		<link rel="stylesheet" href="css/registerAndlogin.css" />
+		<script type="text/javascript" src="js/findPass.js" ></script>
+	</head>
+	<body background="img/5U0sD4OPT0SpFfj7dVObmbYUzZvbczfM.gif">
+		<div class="main login" style="height: 450px;">
+			<form id="form" action="" method="post">
+				<h1>找回密码</h1>
+				<div class="ele">
+					<span>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</span>
+					<input id="email" type="text" placeholder="请输入您的邮箱！"/>
+				</div>
+				<div class="ele">
+					<span>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</span>
+					<input id="password" type="password" placeholder="请输入密码"/>
+				</div>
+				<div class="ele">
+					<span >二次密码：</span>
+					<input id="passwordagain" type="password" placeholder="请输入您的密码！"/>
+				</div>
+				<div class="ele">
+					<span>验&nbsp;&nbsp;证&nbsp;&nbsp;码：</span>
+					<input id="verificationCode" type="text" placeholder="请输入您收到的验证码"/>
+					<input id="button1" type="button" value="点我获取验证码" />
+				</div>
+				<div class="ele">
+					<input id="button2" type="button" value="修改" class="margin-bottom"/>
+				</div>
+			</form>
+		</div>
+	</body>
+	<script>
+		document.onkeydown=function(e){
+			if(e.keyCode==13){
+				$("#login_btn").click();
+			}
+		}
+		
+	</script>
+</html>

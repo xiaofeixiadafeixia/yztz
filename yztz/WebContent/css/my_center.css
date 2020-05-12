@@ -1,0 +1,30 @@
+.font-size-25{
+	font-size: 25px;
+}
+.div-margin{
+	margin: 20px 0px;
+}
+textarea{
+	width: 100%;
+	resize: none;
+}
+.div-padding{
+	padding: 20px;
+}
+.product-img{
+	width: 120px;
+	height:120px;
+}
+.span-margin{
+	margin-left: 30px;
+}
+.product{
+	height: 250px;
+	text-align: center;
+}
+.li-right{
+	float: right;
+}
+.margin-left{
+	margin-left: 20px;
+}

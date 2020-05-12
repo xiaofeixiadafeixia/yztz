@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>yztz</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <listener>
+  	<listener-class>cxw.yztz.web.listener.HibernateListener</listener-class>
+  </listener>
+  
+   <filter>
+  	<filter-name>Encoding</filter-name>
+  	<filter-class>cxw.yztz.web.filter.CharacterEncoding</filter-class>
+  	<init-param>
+  		<param-name>encoding</param-name>
+  		<param-value>utf-8</param-value>
+  	</init-param>
+  </filter>
+  <filter>
+ 	<filter-name>AutoLogin</filter-name>
+  	<filter-class>cxw.yztz.web.filter.AutoLoginFilter</filter-class>
+  </filter>
+  <filter>
+ 	<filter-name>pathFilter</filter-name>
+  	<filter-class>cxw.yztz.web.filter.pathFilter</filter-class>
+  </filter>
+  
+  
+  <filter-mapping>
+  	<filter-name>pathFilter</filter-name>
+  	<url-pattern>/jsp/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+  	<filter-name>AutoLogin</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+  	<filter-name>Encoding</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+  	<servlet-name>UserServlet</servlet-name>
+  	<servlet-class>cxw.yztz.web.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UIServlet</servlet-name>
+  	<servlet-class>cxw.yztz.web.servlet.UIServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddressServlet</servlet-name>
+  	<servlet-class>cxw.yztz.web.servlet.AddressServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ProductServlet</servlet-name>
+  	<servlet-class>cxw.yztz.web.servlet.ProductServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LeaveServlet</servlet-name>
+  	<servlet-class>cxw.yztz.web.servlet.LeaveServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CollectServlet</servlet-name>
+  	<servlet-class>cxw.yztz.web.servlet.CollectServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>OrderServlet</servlet-name>
+  	<servlet-class>cxw.yztz.web.servlet.OrderServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>OrderServlet</servlet-name>
+  	<url-pattern>/OrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CollectServlet</servlet-name>
+  	<url-pattern>/CollectServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LeaveServlet</servlet-name>
+  	<url-pattern>/LeaveServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ProductServlet</servlet-name>
+  	<url-pattern>/ProductServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddressServlet</servlet-name>
+  	<url-pattern>/AddressServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UIServlet</servlet-name>
+  	<url-pattern>/UIServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UserServlet</servlet-name>
+  	<url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping>
+  
+ 
+  
+  
+</web-app>

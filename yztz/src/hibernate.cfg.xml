@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+      
+
+<hibernate-configuration>
+	<session-factory>
+		
+		
+		<!-- 配置连接池 -->
+		<property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+		
+		<property name="hibernate.c3p0.max_size">20</property>
+		<property name="hibernate.c3p0.min_size">5</property>
+		<property name="hibernate.c3p0.timeout">120</property>
+		<property name="hibernate.c3p0.idle_test_period">3000</property>
+		
+		<!-- 连接数据库的基本参数 -->
+		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:CXW</property>
+		<property name="hibernate.connection.username">yztz</property>
+		<property name="hibernate.connection.password">yztz</property>
+		
+		
+		<!-- 配置Hibernate的方言 -->
+		<property name="hibernate.dialect">org.hibernate.dialect.Oracle8iDialect</property>
+		
+		<!-- 可选配置================ -->
+		<!-- 打印SQL -->
+		<property name="hibernate.show_sql">false</property>
+		<!-- 格式化SQL -->
+		<property name="hibernate.format_sql">true</property>
+		<!-- 开启事务 -->
+		<property name="hibernate.current_session_context_class">thread</property> 
+		<!-- 自动建表 -->
+		<!-- <property name="hibernate.hbm2ddl.auto">update</property>  -->
+		
+		<mapping resource="cxw/yztz/entity/User.hbm.xml"/>
+		<mapping resource="cxw/yztz/entity/College.hbm.xml"/>
+		<mapping resource="cxw/yztz/entity/Address.hbm.xml"/>
+		<mapping resource="cxw/yztz/entity/Type.hbm.xml"/>
+		<mapping resource="cxw/yztz/entity/Product.hbm.xml"/>
+		<mapping resource="cxw/yztz/entity/Picture.hbm.xml"/>
+		<mapping resource="cxw/yztz/entity/Collect.hbm.xml"/>
+		<mapping resource="cxw/yztz/entity/BrowseHistory.hbm.xml"/>
+		<mapping resource="cxw/yztz/entity/Leave.hbm.xml"/>
+		<mapping resource="cxw/yztz/entity/Order.hbm.xml"/>
+	</session-factory>
+</hibernate-configuration>
+
+

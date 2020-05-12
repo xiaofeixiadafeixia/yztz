@@ -1,0 +1,30 @@
+.header-img1{
+	height: 100px;
+	width: 100px;
+	float: left;
+}
+.header-img2{
+	height: 100px;
+	width: 100px;
+	float: right;
+}
+.header-li{
+	padding-right: 50px;
+	padding-top: 10px;
+	list-style: none;
+}
+.header-li li{
+	/*float: right;*/
+	margin-right: 20px;
+}
+.font{
+ 	color: black; 
+ 	font-size: 70px;
+}
+.font-right{
+	padding-left: 10px;
+	float: right;
+}
+/*.main-nav{
+	background-color: yellow;
+}*/

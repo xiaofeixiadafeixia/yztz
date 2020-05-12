@@ -1,0 +1,65 @@
+	body{
+		margin: 0px;
+		padding: 0px;
+	}
+	.main{
+		width: 600px;
+		height: 550px;
+		
+		border: 1px red solid;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+	}
+	.login{
+		height: 400px;
+	}
+	.main .ele{
+		height: 50px;
+		width: 500px;
+		margin: auto;
+		text-align: center;
+		padding-top: 3%;
+	}
+	.main input{
+		border-radius: 5px;
+		width: 80%;
+		height: 60%;
+	}
+	.main span{
+		width: 20%;
+		height: 80%;
+	}
+	h1{
+		text-align: center;
+		color: red;
+	}
+	#button2,#button1,#login_btn{
+		width:30%;
+		background-color: white;
+	}
+	#verificationCode{
+		width: 50%;
+	}
+	#isAutoLogin{
+		width: 10px;
+		height: 10px;
+	}
+	#img{
+		width: 30%;
+		height: 70%;
+		float: right;
+	}
+	
+.margin-right{
+	margin-right: 50px;
+}
+.margin-bottom{
+	margin-bottom: 20px;
+}
+.margin-left{
+	margin-left: 50px;
+}

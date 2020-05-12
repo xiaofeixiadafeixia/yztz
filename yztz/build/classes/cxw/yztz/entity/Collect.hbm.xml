@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    	<class name="cxw.yztz.entity.Collect" table="collect" >
+    		<composite-id name="uionPKID" class="cxw.yztz.entity.CollectUionPKID">
+    			<key-property name="user_id" column="user_id"></key-property>
+    			<key-many-to-one name="product"  column="goods_id" class="cxw.yztz.entity.Product" lazy="false"></key-many-to-one>
+    		</composite-id>
+    		<property name="time" column="time"></property>
+    	</class>
+    </hibernate-mapping>

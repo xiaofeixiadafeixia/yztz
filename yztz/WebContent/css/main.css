@@ -1,0 +1,23 @@
+.head-img{
+	height: 300px;
+	width: 100%;
+}
+#myCarousel img{
+	height: 300px;
+	width: 100%;
+}
+
+.hot-product{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 30px;
+	background-color: pink;
+	color: red;
+}
+.new-product{
+	margin-bottom: 20px;
+	font-size: 30px;
+	background-color: greenyellow;
+	color: yellowgreen;
+}
+

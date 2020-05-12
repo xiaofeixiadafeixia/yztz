@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    	<class name="cxw.yztz.entity.Order" table="Orders">
+    		<id	name="orders_id" column="orders_id" >
+    			<generator class="assigned"></generator>
+    		</id>
+    		<property name="user_id" column="user_id"></property>
+    		<property name="money" column="money"></property>
+    		<property name="order_time" column="order_time"></property>
+    		<property name="finish_time" column="finish_time"></property>
+    		<property name="type" column="type"></property>
+    		
+    		<many-to-one name="product" column="goods_id" class="cxw.yztz.entity.Product" lazy="false"></many-to-one>
+    		<many-to-one name="address" column="address" class="cxw.yztz.entity.Address" lazy="false"></many-to-one>
+    	
+    	</class>
+    </hibernate-mapping>

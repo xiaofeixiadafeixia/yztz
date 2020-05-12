@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+   <hibernate-mapping>
+   	<class name="cxw.yztz.entity.College" table="College">
+   		<id name="college_id" column="college_id">
+   			<generator class="sequence">
+    				<param name="sequence_name">seq_College_AddSelf</param>
+    		</generator>
+   		</id>
+   		<property name="name" column="name"></property>
+   		<property name="region" column="region"></property>
+   	</class>
+   </hibernate-mapping>
+   

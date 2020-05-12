@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    	<class name="cxw.yztz.entity.Product" table="GOODS" >
+    		<id	name="goods_id" column="GOODS_ID" >
+    			<generator class="assigned"></generator>
+    		</id>
+    		<property name="name" column="name" ></property>
+    		<property name="info" column="info"></property>
+    		<property name="fineness" column="FINENESS"></property>
+    		<property name="price" column="PRICE"></property>
+    		<property name="time" column="TIME"></property>
+    		<property name="state" column="type"></property>
+    		
+    		<many-to-one name="user" column="user_id" class="cxw.yztz.entity.User" lazy="false"></many-to-one>
+    		<many-to-one name="type_product" column="type_id" class="cxw.yztz.entity.Type" lazy="false"></many-to-one>
+    		<many-to-one name="college" column="college_id" class="cxw.yztz.entity.College" lazy="false"></many-to-one>
+    		
+    		<set name="pictures" inverse="true" cascade="save-update" order-by="type" lazy="false">
+    			<key column="goods_id" ></key>
+    			<one-to-many class="cxw.yztz.entity.Picture" />
+    		</set>
+    		
+    	</class>
+    </hibernate-mapping>

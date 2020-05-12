@@ -1,0 +1,32 @@
+.font-size-25{
+	font-size: 25px;
+}
+
+.div-padding{
+	padding: 20px;
+}
+.div-margin{
+	margin: 20px 0px;
+}
+.span-margin{
+	margin-left: 30px;
+}
+.product-img{
+	width: 120px;
+	height:120px;
+}
+.product-intro{
+	color: black;
+}
+.product-price{
+	margin-top: 10px;
+}
+.product-price span{
+	color: red;
+	font-size: 16px;
+}
+.product{
+	height: 350px;
+	text-align: center;
+	margin-bottom: 20px;
+}

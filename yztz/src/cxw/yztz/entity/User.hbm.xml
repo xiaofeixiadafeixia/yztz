@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="cxw.yztz.entity.User" table="user_info" dynamic-insert="true" dynamic-update="true">
+		<id name="id" column="user_id">
+			<generator class="sequence">
+    				<param name="sequence_name">seq_User_AddSelf</param>
+    			</generator>
+		</id>
+		<property name="name" column="name"></property>
+		<property name="password" column="password"></property>
+		<property name="sex" column="sex"></property>
+		<property name="record_date" column="record_date" ></property>
+		<property name="email" column="email"></property>
+		<property name="info" column="info"></property>
+		<property name="pic" column="chat_head"></property>
+		<property name="last_date" column="last_date" ></property>
+		<property name="message_index" column="message_index"></property>
+		<property name="remind_type" column="remind_type"></property>
+	</class>
+</hibernate-mapping>

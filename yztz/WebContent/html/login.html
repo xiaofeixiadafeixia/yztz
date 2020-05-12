@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<title>登录</title>
+		<script type="text/javascript" src="dist/js/jquery-3.3.1.js" ></script>
+		<link rel="stylesheet" href="css/registerAndlogin.css" />
+		<script type="text/javascript" src="js/login.js" ></script>
+	</head>
+	<body background="img/5U0sD4OPT0SpFfj7dVObmbYUzZvbczfM.gif">
+		<div class="main login">
+			<form id="form" action="login.html" method="post">
+				<h1>跳蚤登录</h1>
+				<div class="ele">
+					<span>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</span>
+					<input id="email" type="text" placeholder="请输入您的邮箱！"/>
+				</div>
+				<div class="ele">
+					<span>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</span>
+					<input id="password" type="text" placeholder="请输入密码"/>
+				</div>
+				<div class="ele">
+					<span>验&nbsp;&nbsp;证&nbsp;&nbsp;码：</span>
+					<input id="verificationCode" type="text" placeholder="请输入验证码"/>
+					<img id="img" src="img/0.png" />
+				</div>
+				<div class="ele">
+					<span>自动登录<input id="isAutoLogin" type="checkbox"/></span>
+					<input id="login_btn" type="button" value="登录"/>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

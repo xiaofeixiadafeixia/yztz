@@ -1,0 +1,44 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+#myCarousel img{
+	height: 400px;
+	/*width: 100%;*/
+}
+.product-message{
+	
+	background-color:white;
+	height: 400px;
+	padding: 0px;
+}
+
+.margin-top{
+	margin-top: 10px;
+}
+
+.a-none{
+	border-radius: 5px;
+	background-color: yellow;
+	text-align: center;
+	font-size: 25px;
+}
+hr{
+	margin-top: 0px;
+}
+.button{
+	position: absolute;
+	bottom: 0px;
+}
+.text-area{
+	width: 100%;
+	resize: none;
+}
+.shows{
+	margin-bottom: 50px;
+	border: 1px gray dashed;
+	border-radius: 20px;
+	padding: 20px;
+	display: none;
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+   <hibernate-mapping>
+   		<class name="cxw.yztz.entity.Address" table="Address">
+   			<id name="address_id" column="address_id">
+   				<!-- <generator class="native"></generator>  -->
+   				<generator class="sequence">
+    				<param name="sequence_name">seq_Address_AddSelf</param>
+    			</generator>
+   			</id>
+   			<property name="user_id" column="user_id"></property>
+   			<property name="college_id" column="college_id"></property>
+   			<property name="address" column="address"></property>
+   			<property name="pseudonym" column="pseudonym"></property>
+   			<property name="phone" column="phone"></property>
+   		</class>
+   </hibernate-mapping>

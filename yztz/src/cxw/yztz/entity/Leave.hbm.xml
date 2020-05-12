@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    	<class name="cxw.yztz.entity.Leave" table="Leave">
+    		<id name="leave_id" column="leave_id">
+    			<generator class="sequence">
+    				<param name="sequence_name">seq_Leave_AddSelf</param>
+    			</generator>
+    		</id>
+    		<property name="goods_id" column="goods_id"></property>
+    		<property name="content" column="content"></property>
+    		<property name="time" column="time"></property>
+    		<property name="type" column="type"></property>
+    		
+    		<many-to-one name="user" column="user_id" lazy="false" class="cxw.yztz.entity.User"></many-to-one>
+    	</class>
+    </hibernate-mapping>
